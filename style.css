@@ -1,0 +1,35 @@
+body{
+    background-color: #31364C;
+    color: #F3EDDF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    /* border: 5px solid  teal; */
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+header nav{
+    /* border: 5px solid  rebeccapurple; */
+    flex-grow: 0.3;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media screen and (max-width=1024px) {
+    nav{
+        width: fit-content;
+        
+    }
+}
+
+li{
+    list-style-type: none;
+    margin-top: 2%;
+}

@@ -4,93 +4,303 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?" />
+    <title>Samy's Personal-Site</title>
   </head>
+
   <body>
-    <header>
-      <img src="assets/logo.png" alt="logo" />
-      <nav class="primary-navigation">
-        <ul class="nav-bar">
-          <li>ABOUT ME</li>
-          <li>MY RESUME</li>
-          <li>MY PROJECTS</li>
-          <li>CONTACT</li>
-        </ul>
-      </nav>
-    </header>
+    <!--navigation var-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-md">
+        <a href="#" class="navbar-brand">
+          <img
+            class="img-fluid d-inline-block"
+            src="assets/logo-white.png"
+            alt="logo"
+          />
+          <p class="lead fw-bold d-inline">Debaili Samy</p>
+        </a>
 
-    <div class="container">
+        <!--toogle buttons for phones-->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <!--span is for responsive burger toggle icon-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navigation items-->
+        <div
+          class="collapse navbar-collapse justify-content-lg-end"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#about"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#\">My Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link fw-bold">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-lg-5">
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <div class="row">
+        <lottie-player
+          class="col-lg-5 img-fluid"
+          src="https://assets1.lottiefiles.com/packages/lf20_8ywcoffy.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <section class="col-lg-7">
+          <h1 class="text-light text-wrap display-1 fw-bold font-monospace">
+            HELLO, I’m Debaili Madani Samy.
+          </h1>
 
-      <lottie-player
-        src="https://assets1.lottiefiles.com/packages/lf20_8ywcoffy.json"
-        background="transparent"
-        speed="1"
-        loop
-        autoplay
-      ></lottie-player>
-
-      <section class="intro">
-        <h1>HELLO, I’m Debaili Madani Samy.</h1>
-
-        <p>
-          and this is my personal website, feel free to check my work. btw i’m a
-          computer science student that enjoys any sort of new technologie and
-          isn't afraid of tackling new fields of this particular domain.
-        </p>
-      </section>
+          <p class="text-light display-6 text-muted w-75">
+            and this is my personal website, feel free to check my work. btw i’m
+            a computer science student that enjoys any sort of new technologie
+            and isn't afraid of tackling new fields of this particular domain.
+          </p>
+        </section>
+      </div>
+      <div class="ligne mx-auto mx-lg-0" id="about"></div>
     </div>
 
-    <div class="ligne"></div>
+    <section class="container my-5">
+      <div class="row">
+        <h1 class="display-3 fw-bold text-light col-lg-5 font-monospace">
+          ABOUT ME.
+        </h1>
 
-    <section class="about intro">
-      <h1>ABOUT ME.</h1>
+        <p class="display-6 col-lg-7 text-muted mt-2 mt-lg-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+      <div class="row">
+        <h2 class="display-5 fw-bold font-monospace text-light col-4 text-end">
+          EDUCATION
+        </h2>
+      </div>
+
+      <div class="of row flex-nowrap mt-3 mt-lg-5">
+        <div class="bf col-4 me-5">
+          <h2 class="text-light fw-bold">2020-2021</h2>
+          <p class="tr display-6 text-muted">
+            studied to get my baccalaureat degree with 17.38/20
+          </p>
+        </div>
+        <div class="bf col-4 me-5">
+          <h2 class="text-light fw-bold">2021-2022</h2>
+          <p class="tr display-6 text-muted">
+            started my first year as a cs student at ESTIN and got 14.68 as a
+            yearly average
+          </p>
+        </div>
+        <div class="bf col-4 me-5">
+          <h2 class="text-light fw-bold">Present day</h2>
+          <p class="tr text-muted">going into my second year at ESTIN</p>
+        </div>
+      </div>
+      <div class="ligne mx-auto mx-lg-0" id="projects"></div>
     </section>
 
-    <article class="education about intro">
-      <h3>EDUCATION</h3>
-      <section class="educ about intro">
-        <section class="edu">
-          <h2>2020-2021</h2>
-          <p>studied to get my baccalaureat degree with 17.38/20</p>
-        </section>
+    <section class="container mb-5">
+      <h1 class="display-3 fw-bold text-light col-lg-5 font-monospace mb-3">
+        MY PROJECTS.
+      </h1>
 
-        <section class="edu">
-          <h2>2021-2022</h2>
-          <p>started my first year as a cs student at ESTIN and got 14.38 as a yearly average</p>
-        </section>
+      <div class="card pt-lg-5 rounded-3 bg-dark mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <img
+              src="assets/placeholder.png"
+              alt="placeholder"
+              class="placeholder img-fluid rounded ms-lg-5"
+            />
+          </div>
 
-        <section class="edu">
-          <h2>Present day</h2>
-          <p>going into my second year at ESTIN</p>
-        </section>
-      </section>
-    </article>
-    <div class="ligne"></div>
+          <div class="col-lg-7">
+            <p class="tro text-muted mb-lg-5 pe-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button class="btn btn-outline-primary btn-lg float-end mb-2 me-2">
+              view more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pt-lg-5 rounded-3 bg-dark mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <img
+              src="assets/placeholder.png"
+              alt="placeholder"
+              class="placeholder img-fluid rounded ms-lg-5"
+            />
+          </div>
+
+          <div class="col-lg-7">
+            <p class="tro text-muted mb-lg-5 pe-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button class="btn btn-outline-primary btn-lg float-end mb-2 me-2">
+              view more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card pt-lg-5 rounded-3 bg-dark mb-5">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <img
+              src="assets/placeholder.png"
+              alt="placeholder"
+              class="placeholder img-fluid rounded ms-lg-5"
+            />
+          </div>
+
+          <div class="col-lg-7">
+            <p class="tro text-muted mb-lg-5 pe-lg-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button class="btn btn-outline-primary btn-lg float-end mb-2 me-2">
+              view more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="ligne mx-auto mx-lg-0" id="contact"></div>
+    </section>
+
+    <section class="container">
+      <h1 class="display-3 fw-bold text-light col-lg-5 font-monospace mb-3">
+        CONTACT.
+      </h1>
+
+      <div class="mg row">
+        <div class="col-lg-6">
+          <h3 class="text-light font-monospace">E-mail</h3>
+          <a
+            href="mailto:m_debaili@estin.dz"
+            class="mgb text-decoration-none text-muted lead font-monospace"
+            >m_debaili@estin.dz</a
+          >
+        </div>
+        <div class="col-lg-6">
+          <h3 class="text-light font-monospace">My LinkedIn</h3>
+          <a
+            href="https://www.linkedin.com/in/samy-debaili/"
+            class="text-decoration-none text-muted lead font-monospace"
+            >Click Here</a
+          >
+        </div>
+      </div>
+
+      <div class="mg row">
+        <div class="col-lg-6">
+          <h3 class="text-light font-monospace">Certificates</h3>
+          <a
+            href="https://drive.google.com/drive/folders/1ZO7_F1ajvDdcfj2AvbkUxKcqN-PY_wQE"
+            class="text-decoration-none text-muted lead font-monospace"
+            >Click Here</a
+          >
+        </div>
+        <div class="col-lg-6">
+          <h3 class="text-light font-monospace">My Resume</h3>
+          <a
+            href="resume.html"
+            class="text-decoration-none text-muted lead font-monospace"
+            >Click Here</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="">
+      
+      <div class="container">
+        <hr class="bg-primary" />
+        <div class="row justify-content">
+          <div class="footer-text col-md-9"><p class="lead text-light">© 2022 - all rights reserved</p></div>
+          <div class="col-md-3 d-flex justify-content-center justify-content-lg-end">
+            <a href="mailto:m_debaili@estin.dz"><img src="assets/gmail.svg" alt="gmail" class=" img-fluid me-2"></a>
+            <a href="https://github.com/samdem-ai/"><img src="assets/github.svg" alt="github" class=" img-fluid me-4"></a>
+            <a href="https://www.linkedin.com/in/samy-debaili/"><img src="assets/linkedIn.svg" alt="linkedIn" class=" img-fluid me-4">
+            <a href="https://twitter.com/Samdem24"><img src="assets/twitter.svg" alt="twitter" class=" img-fluid"></a>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navLinks = document.querySelectorAll(".nav-item");
+      const menuToggle = document.getElementById("main-nav");
+      const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
+    <script src="script.js"></script>
   </body>
-
-  <section class="about intro">
-    <h1>ABOUT ME.</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </p>
-  </section>
 </html>

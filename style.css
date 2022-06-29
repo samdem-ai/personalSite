@@ -1,12 +1,12 @@
 html {
-  font-size: 1em;
+  background-color: #31364c;
+  color: #f3eddf;
+  font-family: 'Times New Roman', Times, serif "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-padding-top: 100px;
 }
 
 body {
   background-color: #31364c;
-  color: #f3eddf;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .ligne {
@@ -14,157 +14,86 @@ body {
   margin-left: 5%;
   width: 20%;
   height: 10px;
-  background-image: linear-gradient(
-    to right,
-    #78d7dd,
-    #84d2d4,
-    #91cbc9,
-    #98c8c3,
-    #a4c2b9,
-    #b2bcae,
-    #bcb7a6,
-    #c9b19b,
-    #d5ab91,
-    #e1a688,
-    #e7a382,
-    #fe9870
-  );
+  background-image: linear-gradient(to right,
+      #78d7dd,
+      #84d2d4,
+      #91cbc9,
+      #98c8c3,
+      #a4c2b9,
+      #b2bcae,
+      #bcb7a6,
+      #c9b19b,
+      #d5ab91,
+      #e1a688,
+      #e7a382,
+      #fe9870);
   margin-top: 2rem;
 }
-
-header {
-  /* border: 5px solid  teal; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.tr{
+  font-size: 35px;
 }
 
-header nav,
-header .nav-bar {
-  /* border: 5px solid  rebeccapurple; */
-  flex-grow: 0.3;
-  justify-content: space-between;
-  display: flex;
-  list-style-type: none;
-  flex-direction: row;
-  margin-top: 2%;
-}
-
-.container {
-  /* border: solid purple; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2rem;
-  gap: 4em;
-}
-
-lottie-player {
-  width: 40%;
-  height: 40%;
-}
-
-.intro {
-  /* border: solid teal; */
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex: 1;
-  align-items: center;
-}
-
-.intro h1 {
-  /* border: solid purple; */
-  font-size: 4rem;
-  font-weight: bold;
-}
-
-.intro p {
-  /* border: solid orangered; */
-  font-size: 1.5rem;
-  opacity: 56%;
-  margin-right: 10%;
-}
-
-
-
-.about {
-  /* border: solid ; */
-  margin-left: 10rem;
-  align-items: flex-start;
-}
-
-.about p {
-  /* border: solid; */
-  max-width: 60%;
-  margin-left: 38%;
-  margin-right: 6.27%;
-}
-
-
-
-.education h3{
-  font-size: 2.5rem;
-  margin-left: 10%;
-}
-
-
-.educ{
-  flex-direction: row;
-}
-
-.edu{
-  width: 25%;
-}
-
-.edu h2::before{
-  content: url("data:image/svg+xml,%3Csvg width='191' height='9' viewBox='0 0 191 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.46297' y1='5.46335' x2='140' y2='3.53703' stroke='%231C5998' stroke-opacity='0.5' stroke-width='7' stroke-linecap='round' stroke-dasharray='14 28 42 56'/%3E%3C/svg%3E ");
-  display: block;
-  position: relative;
-  left: 50%;
-  bottom: 10px;
-}
-
-.edu p{
-  min-width: 80%;
-  margin-left: 0;
-}
-
-
-@media screen and (max-width: 800px) {
-  html{
-    font-size: .75em;
-  }
-  .container {
-    flex-direction: column;
-  }
-
-  lottie-player {
-    width: 100%;
-    height: 100%;
-  }
-
-  .about,
-  .about p {
-    align-items: center;
-    margin-left: 0;
-  }
-
-  .about p {
-    min-width: 90%;
-  }
-
-  .education h3{
-    align-items: center;
-  }
-
-  .educ{
-    overflow-x: scroll;
-    width: 100%;
+.tro{
+    font-size: 22px;
   }
   
-  .edu{
-    width: auto;
-  }
+
+
+.of{
+    overflow-x: visible;
 }
+
+.bf h2::before{
+    content: url("data:image/svg+xml,%3Csvg width='191' height='9' viewBox='0 0 191 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.46297' y1='5.46335' x2='140' y2='3.53703' stroke='%231C5998' stroke-opacity='0.5' stroke-width='7' stroke-linecap='round' stroke-dasharray='14 28 42 56'/%3E%3C/svg%3E ");
+    display: block;
+    position: relative;
+    left: 50%;
+    bottom: 10px;
+
+}
+
+.mg{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+@media (max-width: 576px) {
+    .tr{
+        font-size: 2vh;
+    }
+    
+    .of{
+        overflow: auto;
+    }
+    
+    }
+    
+    @media (max-width:992px){
+        .of{
+            overflow: auto;
+        }
+
+        .placeholder{
+            width: 100%;
+        }
+        html{
+        scroll-padding-top: 250px;
+        }
+
+        .mg{
+            margin-left: 0;
+            margin-top: 5%;
+        }
+
+        .footer-text{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:992px){
+        .tro{
+            font-size: 30px;
+        }
+    }

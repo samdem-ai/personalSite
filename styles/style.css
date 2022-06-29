@@ -1,8 +1,9 @@
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
 html {
   background-color: #31364c;
-  color: #f3eddf;
-  font-family: 'Times New Roman', Times, serif "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  scroll-padding-top: 100px;
 }
 
 body {

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Montsterrat";
+    src: url(assets/Montserrat.otf);
+}
+
+body{
+    background-color: #181A1B !important;
+}
+
+.mainContainer{
+    background-image: linear-gradient(to right,#193141 50%,#181A1B 50%);
+}
+
+
+
+@media (min-width: 0px) {
+    .description{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 540px) {
+    .description{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .description{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:992px) {
+    .wr{
+
+        max-width: 45%;
+    }
+
+    .cd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.wr{
+    width: 90%;
+}
